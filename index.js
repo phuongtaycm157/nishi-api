@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const apiBook = require('./Router/api/book.router');
 
 const app = express();
-const port = process.env.port || 8008;
+const port = process.env.PORT || 8008;
 
 mongoose.connect(process.env.MONGO_URL, {useNewUrlParser: true, useUnifiedTopology: true})
 
