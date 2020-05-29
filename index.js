@@ -13,7 +13,7 @@ app.use(cors())
 
 mongoose.connect(process.env.MONGO_URL, {useNewUrlParser: true, useUnifiedTopology: true})
 
-app.use('/', (req, res) => res.send('Hello'))
+app.get('/', (req, res) => res.send('Hello'))
 
 app.use('/api/books', apiBook);
 
